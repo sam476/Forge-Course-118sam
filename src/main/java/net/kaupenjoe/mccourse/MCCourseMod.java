@@ -58,11 +58,11 @@ import org.apache.logging.log4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
 import java.util.stream.Collectors;
-
+//sam
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MCCourseMod.MOD_ID)
+@Mod(MCCourseMod.MOD_ID) // Note refactored to a constant
 public class MCCourseMod {
-    public static final String MOD_ID = "mccourse";
+    public static final String MOD_ID = "mccourse"; // Note assigned mccourse matches what's in mods.toml in resources -> META-INF
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
