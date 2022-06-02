@@ -69,9 +69,9 @@ public class MCCourseMod {
 
     // Very important Comment
     public MCCourseMod() {
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus(); // variable needed for handling events (required for items)
 
-        ModItems.register(eventBus);
+        ModItems.register(eventBus); // passed in the constructor so we can use in ModItems (DefferedRegister will also be registered)
         ModBlocks.register(eventBus);
 
         ModEnchantments.register(eventBus);
@@ -93,7 +93,7 @@ public class MCCourseMod {
 
         GeckoLib.initialize();
 
-        eventBus.addListener(this::setup);
+        eventBus.addListener(this::setup); // (required for items)
         eventBus.addListener(this::clientSetup);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MCCourseClientConfigs.SPEC, "mccourse-client.toml");
@@ -133,7 +133,7 @@ public class MCCourseMod {
 
         EntityRenderers.register(ModEntityTypes.BOAT_ENTITY.get(), ModBoatRenderer::new);
     }
-
+    //(required for items)
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ComposterBlock.COMPOSTABLES.put(ModItems.TURNIP_SEEDS.get(), 0.3f);

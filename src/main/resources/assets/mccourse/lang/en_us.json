@@ -1,6 +1,7 @@
 {
   "item.mccourse.cobalt_ingot": "Cobalt Ingot",
   "item.mccourse.cobalt_nugget": "Cobalt Nugget",
+  "item.mccourse.wolves": "Wolves",
   "item.mccourse.raw_cobalt": "Raw Cobalt",
   "item.mccourse.dowsing_rod": "Dowsing Rod",
   "item.mccourse.coal_sliver": "Coal Sliver",
@@ -56,6 +57,7 @@
   "block.mccourse.pink_rose": "Pink Rose",
   "block.mccourse.potted_pink_rose": "Potted Pink Rose",
   "block.mccourse.cobalt_blaster": "Cobalt Blaster",
+  "block.mccourse.wolves_block": "Wolves Block",
 
   "block.mccourse.cherry_blossom_log": "Cherry Blossom Log",
   "block.mccourse.cherry_blossom_planks": "Cherry Blossom Planks",

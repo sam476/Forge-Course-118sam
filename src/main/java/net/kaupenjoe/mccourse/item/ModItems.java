@@ -16,15 +16,29 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
+    // Note everytime we create a DeferredRegister we need a register method
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, MCCourseMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, MCCourseMod.MOD_ID); // first thing needed for items
 
     public static final RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB))); // public static final RegistryObject adds the item (but will not have functionality from this line)
     public static final RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
-
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB))); // Note (new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB) is also a builder tab where can use a . to access other stuff to change the item
+    // Note in order to make the items work you will need a folder called assets created in the resources folder
+    // Inside this assets folder you will create a directory exactly named as the mod class (mccourse in this case) this has to be your model.
+    // Inside the mccourse directory we make two directories called lang and the other called textures
+    // Still in the models directory we make a directory called block and another called item (we then drag these to the textures folder)
+    // Inside the lang folder we create a file called en_us.json
+    // follow video 32 at 9:02 for what to put inside this file
+    // Still in this file the structure follows like so, you have first the Unlocalized name and after the : the localized name. Note make sure the folder names and the name of the file are correct
+    // inside the item folder we create the colbalt_ingot.json
+    // in this json file we have the parent which determines how the texture is displayed in your hand and also in 3D (generated means the texture extrude a little bit so it has a 3D look)
+    // we have textures followed by layer0 and what follows this is the definition of the directory where the texture is located (the png must be copied over to the item folder in textures for this to be found)
+    // All the textures is distributed by nanotech detailed in the Credits.txt file
     public static final RegistryObject<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB))); // this is how you create another item but Note you will need a json file in models -> item and a png file in textures -> item (also add a pointer inside en_us.json)
+
+    public static final RegistryObject<Item> WOLVES = ITEMS.register("wolves",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",

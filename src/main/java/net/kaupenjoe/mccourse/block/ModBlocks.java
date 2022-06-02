@@ -29,6 +29,12 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+    /**
+     * to create a custom block we need to create a folder called block, then followed by a ModBlocks class,
+     * and then a DefferedRegister object and a register method.
+     * We then call the register method in the MCCourseMod class (ModBlocks.register(eventBus)).
+     *
+     * */
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MCCourseMod.MOD_ID);
 
@@ -37,7 +43,10 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
     public static final RegistryObject<Block> COBALT_ORE = registerBlock("cobalt_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.COURSE_TAB);
+                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.COURSE_TAB); // this is how you create another block (Note you will need a block.mccourse.name_block": "Cobalt Ore" in the en_us.json file, and a json file in mcccourse -> blockstates, models -> block, models -> item folders similar to the cobalt block one and a png file in the block folder under the textures folder
+
+    public static final RegistryObject<Block> WOLVES_BLOCK = registerBlock("wolves_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
@@ -54,7 +63,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> COBALT_STAIRS = registerBlock("cobalt_stairs",
             () -> new StairBlock(() -> ModBlocks.COBALT_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB); // registerBlock method in action
     public static final RegistryObject<Block> COBALT_SLAB = registerBlock("cobalt_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
@@ -176,12 +185,21 @@ public class ModBlocks {
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)), ModCreativeModeTab.COURSE_TAB);
 
 
+    // both registerBlock and registerBlockItem are helper methods
+    // RegistryObject<T> toReturn = BLOCKS.register(name, block); creates the block
+    // to see the registerBlock method in action look at the COBALT_BLOCK object
+    // from here you'll need a directory called blockstates inside the mccourse folder (this is where you add the json file for the block you want)
+    // the block json file will have an object called "variants" followed by a nested object called "model" which points to an underscore json file (cobalt_block in this case)
+    // In the models folder -> block folder you will also have a json file for this that includes an object of parent, textures and all (Note the block model determines how the block will look inside the world)
+    // In the same models folder -> item folder you will have another json file with an object called parent that points back to json file in the block folder
+    // Don't forget to include a "block.mccourse.cobalt_block": "Cobalt Block" in the en_us.json file in the lang folder in blockstates folder
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                      CreativeModeTab tab, String tooltipKey) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab, tooltipKey);
+        registerBlockItem(name, toReturn, tab, tooltipKey); // registers the item associated with this block here
         return toReturn;
     }
+
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                             CreativeModeTab tab, String tooltipKey) {
