@@ -228,3 +228,110 @@ public class ModBlocks {
         BLOCKS.register(eventBus);
     }
 }
+
+/**
+ * 6:03
+ * 2. Basic Minecraft Modding Concepts
+ * 43. Custom Stairs & Slabs
+ * testing here
+ *
+ * 4:50
+ * 2. Basic Minecraft Modding Concepts
+ * 43. Custom Stairs & Slabs
+ * explaination of code here
+ *
+ * Note the parent is the actual slab or stairs where as the bottom top and side are using the block for textures
+ *
+ * 4:11
+ * 2. Basic Minecraft Modding Concepts
+ * 43. Custom Stairs & Slabs
+ * After this we add the translation for either or both stairs and slabs into the en_us.json file.
+ *
+ *
+ *
+ * 3:23
+ * 2. Basic Minecraft Modding Concepts
+ * 43. Custom Stairs & Slabs
+ * Note here variants. Certain blocks in the world have different properties. Depending on those properties, if the properties facing east, bottom, inner_left then we are going to show a particular model and the y keeps in the rotation in place.
+ *
+ * 2:15
+ * 2. Basic Minecraft Modding Concepts
+ * 43. Custom Stairs & Slabs
+ * Note you  can always go to the assets inside Gradle:net.minecreaftclientextra 1.18.2 or whatever version to get the code you need for your mods especially for your custom stairs and slabs json files.
+ *
+ * 0:28
+ * 2. Basic Minecraft Modding Concepts
+ * 43. Custom Stairs & Slabs
+ * To create your custom stars or slabs, you need to go to ModBlocks,
+ *
+ * then create the registry object for either one (Note that your naming for the stairs object is plural and naming for slabs is singular), also for stairs you have a StairBlock after the new keyword, and for slabs it's SlabBlock,
+ *
+ * After this you will go to mccourse -> blockstates and add in the json files for your stairs and slabs
+ *
+ * Note all of these JSON files are available to you in the GitHub repository or as individual gists (do not type this out)
+ */
+
+/**
+ * 3:32
+ * 2. Basic Minecraft Modding Concepts
+ * 44. Custom Buttons & Pressure Plates
+ * testing here
+ *
+ * 3:19
+ * 2. Basic Minecraft Modding Concepts
+ * 44. Custom Buttons & Pressure Plates
+ * Then in resources -> assets -> mccourse -> blockstates we add in the json files for the buttons and or pressure plates. Note the button has three different block models while the pressure plate only has two. Your button must have these json files in the models -> block folder: for example,
+ *
+ * cobalt_button.json, cobalt_button_inventory.json, cobalt_button_pressed.json
+ *
+ * And for your pressure plate something like this in the same folder: cobalt_pressure_plate.json,
+ *
+ * cobalt_pressure_plate_down.json.
+ *
+ * After this you will add only the json file for your button and pressure plate into the item folder below (Note both files point to the block)
+ *
+ * 0:59
+ * 2. Basic Minecraft Modding Concepts
+ * 44. Custom Buttons & Pressure Plates
+ * To create a custom button we make it a registry object, with a new StoneButtonBlock, followed a .noCollision() extension after after the requires CorrectToolForDrops() .
+ *
+ * To create a custom pessure plate we make it a registry object, with a new PressurePlateBlock (Note the getSignalStrength method is responsible for the sensitivity).
+ *
+ * We make these objects in the ModBlocks class.
+ *
+ * After this we add in the translations for either or both buttons and press plates in the en_us json file.
+ */
+
+/**
+ * 4:54
+ * 2. Basic Minecraft Modding Concepts
+ * 45. Custom Fences & Fence Gates & Walls
+ * testing here
+ *
+ * 4:13
+ * 2. Basic Minecraft Modding Concepts
+ * 45. Custom Fences & Fence Gates & Walls
+ * Then we need to add the tags for the fences and walls to work properly.
+ *
+ * To do this we go to minecraft's blocks folder and add the json files for the fences and walls.
+ *
+ * 1:31
+ * 2. Basic Minecraft Modding Concepts
+ * 45. Custom Fences & Fence Gates & Walls
+ * explanation of the json files here
+ *
+ * Note that the fence and wall have a multipart array (here we add different models depending on whether or not something is a neighbor.
+ *
+ * From here we copy over the json files to the models -> block folder (Note that only the parent is different)
+ *
+ * Also do this for the item folder below as well in the models folder.
+ *
+ * 1:02
+ * 2. Basic Minecraft Modding Concepts
+ * 45. Custom Fences & Fence Gates & Walls
+ * To create a custom fence, fence gate and gate wall we need to create their registry objects in the ModBlocks class. Note that after the new keyword for the fence object we add FenceBlock, for the fence gate we add FenceGateBlock , and for the wall object we add WallBlock.
+ *
+ * Add the translation for these in the en_us.json file.
+ *
+ * Add the blocks in the resources -> assets -> mccourse -> blockstates folder
+ */

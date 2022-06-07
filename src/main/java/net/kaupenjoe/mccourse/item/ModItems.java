@@ -139,3 +139,58 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 }
+
+/**
+ * 7:21
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * testing here
+ *
+ * 6:58
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * where to find other textures here
+ *
+ * 6:16
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * important points here
+ *
+ * 5:50
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * The next step is to get the 3D armor. To do this you need to go to resources -> assets -> mccourse -> textures and create a new directory called armor. Then in this folder copy over the pngs.
+ *
+ *
+ *
+ * 4:03
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * After those steps go to ModItems.java and add in the armor set as a registry object, followed by the new ArmorItem. Note you will have to individually add the set pieces themselves as separate items here.
+ *
+ * Go to en_us.json and add in the translations.
+ *
+ * Add in the json files for the models -> item folder.
+ *
+ * Add in the png files for the textures's item folder.
+ *
+ * 3:29
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * important here for when you want to add another armor material
+ *
+ * 2:54
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * Note try to play with the numbers until you get what you want
+ *
+ * 0:33
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * steps of implementation explained here
+ *
+ * 0:30
+ * 3. All about Tools & Armor
+ * 50. Creating a new Armor Set
+ * To create a new Armor set, go to mccourse -> item -> custom folder and create a class for it like ModArmorMaterials
+ */

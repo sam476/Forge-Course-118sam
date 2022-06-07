@@ -11,6 +11,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.Random;
+// To create an Advanced Block we first need the "custom" folder and then the block class (SpeedyBlock in this case)
+// Note we have to make a registry object for this block in ModBlocks,
+// then crate a block json for this in mccourse -> blockstates folder,
+// then create a block json for this in models -> block folder ( the name to the right in the code points to a texture),
+// then create a block json for this in models -> item folder,
+// then finally add a block png for the textures -> item folder.
 
 public class SpeedyBlock extends Block {
     public SpeedyBlock(Properties properties) {
@@ -46,9 +52,9 @@ public class SpeedyBlock extends Block {
         }
     }
 
-    @Override
+    @Override // functionality for the speedyBlock
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
-        if(!pLevel.isClientSide()) {
+        if(!pLevel.isClientSide()) {  // Note the ! is important because without it we're checking off on the client side (we want to be on the server)
             if(pEntity instanceof LivingEntity) {
                 LivingEntity entity = ((LivingEntity) pEntity);
                 entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1));

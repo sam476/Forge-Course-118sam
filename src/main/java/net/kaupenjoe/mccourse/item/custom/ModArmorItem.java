@@ -77,3 +77,25 @@ public class ModArmorItem extends ArmorItem {
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
 }
+/**
+ * 3:32
+ * 3. All about Tools & Armor
+ * 51. Full Armor Effect
+ * testing here
+ *
+ * 3:10
+ * 3. All about Tools & Armor
+ * 51. Full Armor Effect
+ * how to use this class explained here. You apply new ModArmorItem
+ *
+ * 0:36
+ * 3. All about Tools & Armor
+ * 51. Full Armor Effect
+ * code in this class explained here
+ *
+ * 0:09
+ * 3. All about Tools & Armor
+ * 51. Full Armor Effect
+ * To create a Full Armor Effect (this is an effect you get if your character wears the full set of a certain armor) ,
+ * first you need to create a class called ModArmorItem in mccourse -> block -> item -> custom.
+ */
