@@ -42,6 +42,7 @@ public class ModFluids {
     public static final RegistryObject<LiquidBlock> HONEY_BLOCK = ModBlocks.BLOCKS.register("honey",
             () -> new LiquidBlock(() -> ModFluids.HONEY_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops()));
+
     //FlowingFluidBlock
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
