@@ -28,3 +28,43 @@ public class ModItemProperties {
         });
     }
 }
+/**
+ * 4:44
+ * 4. Intermediate Minecraft Modding Concepts
+ * 56. Item Properties
+ * testing here
+ *
+ * 4:20
+ * 4. Intermediate Minecraft Modding Concepts
+ * 56. Item Properties
+ * add the other data tablet png on in textures -> item folder
+ *
+ * 3:34
+ * 4. Intermediate Minecraft Modding Concepts
+ * 56. Item Properties
+ * code explained here
+ *
+ * 2:59
+ * 4. Intermediate Minecraft Modding Concepts
+ * 56. Item Properties
+ * Note we use this inside the item model.
+ *
+ * create a new item model json file with _on.
+ *
+ *
+ *
+ * 0:52
+ * 4. Intermediate Minecraft Modding Concepts
+ * 56. Item Properties
+ * code created here
+ *
+ * 0:43
+ * 4. Intermediate Minecraft Modding Concepts
+ * 56. Item Properties
+ * To create an item property we first need to make class called ModItemProperties in the util folder.
+ *
+ * 0:26
+ * 4. Intermediate Minecraft Modding Concepts
+ * 56. Item Properties
+ * Note similar to a block state property, and item property enables us to point to a different item, model, space and file if the property changes its value.
+ */

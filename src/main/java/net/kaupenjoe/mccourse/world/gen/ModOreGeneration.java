@@ -22,3 +22,26 @@ public class ModOreGeneration {
         base.add(ModPlacedFeatures.COBALT_ORE_PLACED);
     }
 }
+/**
+ * 6:40
+ * 6. World Generation
+ * 82. Custom Ore Generation
+ * testing here,
+ *
+ * also note play around with the vanilla code if you can
+ *
+ * 4:57
+ * 6. World Generation
+ * 82. Custom Ore Generation
+ * ModOreGeneration class explained here
+ *
+ * 3:09
+ * 6. World Generation
+ * 82. Custom Ore Generation
+ * add the feature to ModPlacedFeatures class
+ *
+ * 0:30
+ * 6. World Generation
+ * 82. Custom Ore Generation
+ * to create a custom ore generation once again create the feature and its object in ModConfiguredFeature class
+ */

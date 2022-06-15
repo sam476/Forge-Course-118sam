@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": { "model": "mccourse:block/an_ore_block_off" },
+    "clicked=true": { "model": "mccourse:block/an_ore_block_on" }
+  }
+}

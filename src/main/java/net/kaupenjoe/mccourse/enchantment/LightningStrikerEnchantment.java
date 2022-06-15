@@ -36,9 +36,53 @@ public class LightningStrikerEnchantment extends Enchantment {
 
         super.doPostAttack(pAttacker, pTarget, pLevel);
     }
-
+    //determines how many levels there are
     @Override
     public int getMaxLevel() {
         return 2;
     }
 }
+
+/**
+ * 6:23
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * testing here
+ *
+ * 6:01
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * Add the translation file in the en_us.json file
+ *
+ * 4:53
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * Note we need to add an eventbus in the MCCourseMod for the enchantment
+ *
+ * 4:15
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * adding code to Mod Enchantments here
+ *
+ * 4:00
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * tip here
+ *
+ * 1:07
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * where to find all the vanilla enchantments here
+ *
+ * 0:33
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * What to add in these classes explained here.
+ *
+ * 0:09
+ * 3. All about Tools & Armor
+ * 53. Custom Enchantment
+ * to Create a Custom Enchantment, in the mccourse you create a new folder called enchantment.
+ *
+ * Create two classes LighteningStrikerEnchantment and ModEnchantment.
+ */

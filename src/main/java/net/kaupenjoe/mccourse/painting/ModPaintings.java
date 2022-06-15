@@ -22,3 +22,43 @@ public class ModPaintings {
         PAINTING_MOTIVES.register(eventBus);
     }
 }
+/**
+ * 2:53
+ * 4. Intermediate Minecraft Modding Concepts
+ * 70. Custom Paintings
+ * testing here
+ *
+ * 2:31
+ * 4. Intermediate Minecraft Modding Concepts
+ * 70. Custom Paintings
+ * About credits here
+ *
+ * 2:15
+ * 4. Intermediate Minecraft Modding Concepts
+ * 70. Custom Paintings
+ * create a new folder called painting inside the textures folder
+ *
+ * 1:09
+ * 4. Intermediate Minecraft Modding Concepts
+ * 70. Custom Paintings
+ * more code explained here
+ *
+ * 1:00
+ * 4. Intermediate Minecraft Modding Concepts
+ * 70. Custom Paintings
+ * add the register method in MCCourseMod class
+ *
+ * 0:27
+ * 4. Intermediate Minecraft Modding Concepts
+ * 70. Custom Paintings
+ * code explained here
+ *
+ * 0:04
+ * 4. Intermediate Minecraft Modding Concepts
+ * 70. Custom Paintings
+ * to add custom paintings,
+ *
+ * we create a new folder in mccourse folder called painting,
+ *
+ * then we create a class called ModPaintings class.
+ */

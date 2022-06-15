@@ -41,8 +41,11 @@ public class DowsingRodItem extends Item {
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
 
+
             for(int i = 0; i <= positionClicked.getY() + 64; i++) {
                 Block blockBelow = pContext.getLevel().getBlockState(positionClicked.below(i)).getBlock();
+                Block firstBlock = pContext.getLevel().getBlockState(positionClicked.atY(1)).getBlock();
+
 
                 if(isValuableBlock(blockBelow)) {
                     outputValuableCoordinates(positionClicked.below(i), player, blockBelow);
@@ -56,6 +59,20 @@ public class DowsingRodItem extends Item {
                             SoundSource.BLOCKS, 1f, 1f);
 
                     break;
+                }
+
+                if(isValuableBlock(blockBelow) && i == 1) {
+                    outputValuableCoordinates(positionClicked.atY(1), player, firstBlock);
+                    player.sendMessage(new TextComponent("first block found!"),
+                            player.getUUID());
+
+                    if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())) {
+                        addNbtToDataTablet2(player, positionClicked.atY(1), firstBlock);
+                    }
+
+
+                    pContext.getLevel().playSound(player, positionClicked, ModSounds.DOWSING_ROD_FOUND_ORE.get(),
+                            SoundSource.BLOCKS, 1f, 1f);
                 }
             }
 
@@ -72,14 +89,22 @@ public class DowsingRodItem extends Item {
         return super.useOn(pContext);
     }
 
-    private void addNbtToDataTablet(Player player, BlockPos pos, Block blockBelow) {
+    private void addNbtToDataTablet(Player player, BlockPos pos, Block blockFound) {
         ItemStack dataTablet =
                 player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET.get()));
 
         CompoundTag nbtData = new CompoundTag();
-        nbtData.putString("mccourse.last_ore", "Found " + blockBelow.asItem().getRegistryName().toString() + " at (" +
+        nbtData.putString("mccourse.last_ore", "Found " + blockFound.asItem().getRegistryName().toString() + " at (" +
                 pos.getX() + ", "+ pos.getY() + ", "+ pos.getZ() + ")");
+        dataTablet.setTag(nbtData);
+    }
+    private void addNbtToDataTablet2(Player player, BlockPos pos, Block blockFound) {
+        ItemStack dataTablet =
+                player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET.get()));
 
+        CompoundTag nbtData = new CompoundTag();
+        nbtData.putString("mccourse.first_ore", "Found first block " + blockFound.asItem().getRegistryName().toString() + " at (" +
+                pos.getX() + ", "+ pos.getY() + ", "+ pos.getZ() + ")");
         dataTablet.setTag(nbtData);
     }
 

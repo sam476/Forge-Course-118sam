@@ -64,3 +64,22 @@ public class SpeedyBlock extends Block {
         super.stepOn(pLevel, pPos, pState, pEntity);
     }
 }
+
+/**
+ * 1:56
+ * 4. Intermediate Minecraft Modding Concepts
+ * 68. Spawning Particles
+ * testing and other details here
+ *
+ * 0:23
+ * 4. Intermediate Minecraft Modding Concepts
+ * 68. Spawning Particles
+ * code explained here
+ *
+ * 0:04
+ * 4. Intermediate Minecraft Modding Concepts
+ * 68. Spawning Particles
+ * to spawn particles,
+ *
+ * create a method in SpeedBlock class called animateTick,
+ */

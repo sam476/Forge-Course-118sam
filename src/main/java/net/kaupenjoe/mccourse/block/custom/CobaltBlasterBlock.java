@@ -167,3 +167,102 @@ public class CobaltBlasterBlock extends BaseEntityBlock {
         return createTickerHelper(pBlockEntityType, ModBlockEntities.COBALT_BLASTER.get(), CobaltBlasterBlockEntity::tick);
     }
 }
+
+/**
+ * 17:51
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * final testing here
+ *
+ * 16:53
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Override voxelShape method in your class
+ *
+ * 13:10
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * exporting the facings here
+ *
+ * 9:27
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * More with Block bench
+ *
+ * 9:11
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * add the translation to en_us.json
+ *
+ * 7:59
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Fixing the block status issue
+ *
+ * 7:42
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Note you will need to the new Block to ColbaltBlasterBlock
+ *
+ * 5:47
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Fixing the rotation,
+ *
+ * you will need a custom block class in the custom bolder
+ *
+ * 5:33
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * fixing the see through here
+ *
+ * 5:24
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Fixing the issues explained
+ *
+ * 4:42
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Add the render layer in the MCCourseMod class
+ *
+ * 3:58
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Create a new registry object in ModBlocks
+ *
+ * 3:33
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Add the json file to the blockstates folder
+ *
+ * 3:17
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * add the json file for the models block folder
+ *
+ * 2:19
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * Inside textures create a new directory called machines
+ *
+ * 1:44
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * code explained here
+ *
+ * 1:22
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * exporting the block model
+ *
+ * 0:38
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * steps explained here
+ *
+ * 0:09
+ * 4. Intermediate Minecraft Modding Concepts
+ * 64. Custom Block Models in Minecraft with BlockBench
+ * To create a 3-D block models to Minecraft, you need the BlockBench software
+ */

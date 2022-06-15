@@ -47,3 +47,64 @@ public class ModFluids {
         FLUIDS.register(eventBus);
     }
 }
+
+/*
+  5:50
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  testing here
+
+  5:19
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  add a new folder called fluids in the minecraft tags folder
+
+  2:52
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  important points here
+
+  2:37
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  add the register method in MCCourseMod class for ModFluids
+
+  2:01
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  code explained here
+
+  1:54
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  add the png file to textures item folder
+
+  1:47
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  add the json file to models item folder
+
+  1:38
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  add translation in en_us.json
+
+  1:06
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  in ModItems class we create a registry object for the custom fluid
+
+  0:47
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  in mccourse folder we create a folder called Fluid
+
+  and in that folder we copy over the ModFluids class in its entirety.
+
+  0:21
+  4. Intermediate Minecraft Modding Concepts
+  72. Custom Fluids
+  Note custom fluids have one limitation and that is they behave like water,
+
+  and your going to have the same particles as water.
+ */

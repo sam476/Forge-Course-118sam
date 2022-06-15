@@ -27,3 +27,25 @@ public class ModFlowerGeneration {
         }
     }
 }
+
+/**
+ * 4:14
+ * 6. World Generation
+ * 81. Custom Flower Generation
+ * try out other examples if you can
+ *
+ * 3:21
+ * 6. World Generation
+ * 81. Custom Flower Generation
+ * create a class for gen folder
+ *
+ * 2:37
+ * 6. World Generation
+ * 81. Custom Flower Generation
+ * add another feature ModPlacedFeatures class
+ *
+ * 0:13
+ * 6. World Generation
+ * 81. Custom Flower Generation
+ * to create flower generation you first need to create the feature inside ModConfiguredFeature class
+ */

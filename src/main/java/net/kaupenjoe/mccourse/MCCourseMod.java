@@ -151,3 +151,22 @@ public class MCCourseMod {
         });
     }
 }
+
+/**
+ * 1:19
+ * 4. Intermediate Minecraft Modding Concepts
+ * 58. Add Items to the Composter
+ * testing here
+ *
+ * 0:15
+ * 4. Intermediate Minecraft Modding Concepts
+ * 58. Add Items to the Composter
+ * Change code within the setup method in MCCourseMod.java,
+ *
+ * explained here
+ *
+ * 0:09
+ * 4. Intermediate Minecraft Modding Concepts
+ * 58. Add Items to the Composter
+ * To add items to the composter,
+ */

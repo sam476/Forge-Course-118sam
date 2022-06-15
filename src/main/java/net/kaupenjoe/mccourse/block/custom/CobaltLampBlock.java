@@ -12,11 +12,11 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class CobaltLampBlock extends Block {
-    public static final BooleanProperty CLICKED = BooleanProperty.create("clicked");
+    public static final BooleanProperty CLICKED = BooleanProperty.create("clicked"); // Note this is how you create a customblockstate property
 
     public CobaltLampBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.defaultBlockState().setValue(CLICKED, false));
+        this.registerDefaultState(this.defaultBlockState().setValue(CLICKED, false)); // Note this sets the object light to be false by default
     }
 
     @Override
@@ -35,3 +35,62 @@ public class CobaltLampBlock extends Block {
         pBuilder.add(CLICKED);
     }
 }
+
+/**
+ * 12:40
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * testing here
+ *
+ * 12:24
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Add the png file for textures's block folder
+ *
+ * 11:57
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Add the json file for the mccourse -> models -> block folder
+ *
+ * 11:35
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Add the json file to mccourse blockstates
+ *
+ * 11:16
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Add translation to en_us.json
+ *
+ * 10:09
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Note you will need to add the block as a block registry object in ModBlocks class.
+ *
+ * Also note the .lightlevel uses a ternary operator to illuminate light from the object (15 here is max)
+ *
+ * 8:44
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Always include the ! before pLevel.isClientSide()
+ *
+ * 7:27
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Note if you have multiple block state properties you can add them with a ,
+ *
+ * 3:32
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * Changing Block states explained here
+ *
+ * 2:00
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * More about Blockstates Properties here
+ *
+ * 0:27
+ * 4. Intermediate Minecraft Modding Concepts
+ * 54. BlockState Properties
+ * theory of blocks vs blockstates explained here
+ */

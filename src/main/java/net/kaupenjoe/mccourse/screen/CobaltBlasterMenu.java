@@ -139,3 +139,148 @@ public class CobaltBlasterMenu extends AbstractContainerMenu {
         }
     }
 }
+/**
+ * 25:38
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * testing here
+ *
+ * 24:58
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * Important for the client set up method here (added to the MCCourseMod class)
+ *
+ * 23:32
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * the screen of colbalt explained
+ *
+ * 22:34
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * fitting the menu (also note the png file was copied over to the textures gui folder)
+ *
+ * 22:03
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * call the eventBus in MCCourseMod
+ *
+ * 20:33
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * more code explained
+ *
+ * 20:02
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * slot classes explained
+ *
+ * 17:26
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * code explained here
+ *
+ * 16:43
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * we copy over two slot classes, the fuel slot and the result slot
+ *
+ * 16:32
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * Inside screen we create a folder called slot
+ *
+ * 16:31
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * and another class ModMenuTypes
+ *
+ * 16:11
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * in mccourse folder we create the following folders: screen and inside of screen we create two classes, the screen and the menu.
+ *
+ * 15:33
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * hardcoded recipe here (not recommended practice)
+ *
+ * 11:35
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * important point here
+ *
+ * 7:39
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * more code explained here
+ *
+ * 6:39
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * method defined here
+ *
+ * 5:41
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * code explained
+ *
+ * 5:27
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * call the eventBus register method in MCCourseMod class
+ *
+ * 4:09
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * we make a class called entity in mccourse folder,
+ *
+ * and we create two classes for it.
+ *
+ * 0:31
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * theory explained here
+ *
+ * 0:10
+ * 5. Advanced Minecraft Modding Concepts
+ * 75. Custom Block Entity
+ * Note Block Entities are blocks that have a particular functionality associated with it.
+ */
+
+/**
+ * 22:01
+ * 5. Advanced Minecraft Modding Concepts
+ * 76. Creating custom Recipe Types
+ * testing here
+ *
+ * 21:15
+ * 5. Advanced Minecraft Modding Concepts
+ * 76. Creating custom Recipe Types
+ * copy over the recipe to mccourse's recipes folder
+ *
+ * 7:19
+ * 5. Advanced Minecraft Modding Concepts
+ * 76. Creating custom Recipe Types
+ * more code added and explained
+ *
+ * 7:01
+ * 5. Advanced Minecraft Modding Concepts
+ * 76. Creating custom Recipe Types
+ * register method added via MCCourseMod
+ *
+ * 1:13
+ * 5. Advanced Minecraft Modding Concepts
+ * 76. Creating custom Recipe Types
+ * code explained
+ *
+ * 0:51
+ * 5. Advanced Minecraft Modding Concepts
+ * 76. Creating custom Recipe Types
+ * copy over the recipe classes
+ *
+ * 0:38
+ * 5. Advanced Minecraft Modding Concepts
+ * 76. Creating custom Recipe Types
+ * mccourse package we create a new package (Recipe)
+ */

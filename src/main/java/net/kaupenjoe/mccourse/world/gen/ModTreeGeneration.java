@@ -27,3 +27,40 @@ public class ModTreeGeneration {
         }
     }
 }
+
+/**
+ * 10:00
+ * 6. World Generation
+ * 80. Custom Tree Generation
+ * testing here
+ *
+ * 8:26
+ * 6. World Generation
+ * 80. Custom Tree Generation
+ * create a class (ModWorldEvents) in the world folder
+ *
+ * 6:58
+ * 6. World Generation
+ * 80. Custom Tree Generation
+ * create a class in the new folder (ModTreeGeneration)
+ *
+ * 6:47
+ * 6. World Generation
+ * 80. Custom Tree Generation
+ * create a folder called (gen) in the world folder
+ *
+ * 4:48
+ * 6. World Generation
+ * 80. Custom Tree Generation
+ * create a class (ModPlacedFeatures) in the feature folder
+ *
+ * 3:18
+ * 6. World Generation
+ * 80. Custom Tree Generation
+ * code in depth explained here
+ *
+ * 0:18
+ * 6. World Generation
+ * 80. Custom Tree Generation
+ * To create a custom tree generation we need to go back to our ModConfiguredFeature and add our new feature
+ */

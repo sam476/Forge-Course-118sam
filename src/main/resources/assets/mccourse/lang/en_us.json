@@ -43,6 +43,7 @@
   "block.mccourse.raw_cobalt_block": "Raw Cobalt Block",
   "block.mccourse.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
   "block.mccourse.speedy_block": "Speedy Block",
+  "block.mccourse.java_block": "Java Block",
   "block.mccourse.cobalt_stairs": "Cobalt Stairs",
   "block.mccourse.cobalt_slab": "Cobalt Slab",
   "block.mccourse.cobalt_button": "Cobalt Button",
@@ -53,6 +54,7 @@
   "block.mccourse.cherry_blossom_door": "Cherry Blossom Door",
   "block.mccourse.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
   "block.mccourse.cobalt_lamp": "Cobalt Lamp",
+  "block.mccourse.an_ore_block": "AnOreBlock",
   "block.mccourse.turnip_crop": "Turnip Crop",
   "block.mccourse.pink_rose": "Pink Rose",
   "block.mccourse.potted_pink_rose": "Potted Pink Rose",
@@ -76,6 +78,7 @@
   "tooltip.mccourse.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
   "tooltip.mccourse.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
   "tooltip.block.speedy_block": "It gets REALLY speedy!",
+  "tooltip.block.java_block": "Java is a class based object-oriented programming language that makes the computer do things like explosions!",
 
   "entity.minecraft.villager.mccourse.blastmaster": "Blastmaster",
 

@@ -194,3 +194,64 @@ public class ModItems {
  * 50. Creating a new Armor Set
  * To create a new Armor set, go to mccourse -> item -> custom folder and create a class for it like ModArmorMaterials
  */
+
+/**
+ * 2:36
+ * 3. All about Tools & Armor
+ * 52. Custom Horse Armor
+ * testing here
+ *
+ * 0:15
+ * 3. All about Tools & Armor
+ * 52. Custom Horse Armor
+ * To create Custom Horse Armor, go to ModItems and create a registry object for it, add new HorseArmorItem, you will add two parameters one for the protection as an int and the texture of the armor.
+ *
+ * Add the translation in en_us.json
+ *
+ * Copy the ingot for the horse amor json file in mccourse -> models -> item.
+ *
+ * Add the png file for the horse amor in the textures -> item folder.
+ *
+ * To add the 3D texture you need to go to assets folder under resources and create a folder called minecraft and then create a folder called textures inside, then inside of that folder create the following series of folders: entity -> horse -> armor.
+ *
+ * Inside this armor folder add the png of the horse armor.
+ */
+
+/**
+ * 3:11
+ * 4. Intermediate Minecraft Modding Concepts
+ * 66. Custom Bows
+ * testing here
+ *
+ * 2:51
+ * 4. Intermediate Minecraft Modding Concepts
+ * 66. Custom Bows
+ * Add png files to textures item folder
+ *
+ * 1:59
+ * 4. Intermediate Minecraft Modding Concepts
+ * 66. Custom Bows
+ * add the json files to the models item folder
+ *
+ * 1:46
+ * 4. Intermediate Minecraft Modding Concepts
+ * 66. Custom Bows
+ * add translation in en_us.json
+ *
+ * 1:18
+ * 4. Intermediate Minecraft Modding Concepts
+ * 66. Custom Bows
+ * from ItemProperties class
+ *
+ * 0:39
+ * 4. Intermediate Minecraft Modding Concepts
+ * 66. Custom Bows
+ * Add the properties in the ModItemProperties class
+ *
+ * 0:12
+ * 4. Intermediate Minecraft Modding Concepts
+ * 66. Custom Bows
+ * to create a custom bow,
+ *
+ * first create a registry object for the ModItems class
+ */

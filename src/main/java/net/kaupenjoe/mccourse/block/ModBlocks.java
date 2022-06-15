@@ -16,6 +16,9 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
@@ -59,6 +62,10 @@ public class ModBlocks {
             () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.speedy_block");
 
+    public static final RegistryObject<Block> Java_BLOCK = registerBlock("java_block",
+            () -> new JavaBlock(BlockBehaviour.Properties.of(Material.EXPLOSIVE)
+                    .strength(0f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.java_block");
+
 
     public static final RegistryObject<Block> COBALT_STAIRS = registerBlock("cobalt_stairs",
             () -> new StairBlock(() -> ModBlocks.COBALT_BLOCK.get().defaultBlockState(),
@@ -99,6 +106,11 @@ public class ModBlocks {
                     .lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)),
             ModCreativeModeTab.COURSE_TAB);
 
+    public static final RegistryObject<Block> AN_ORE_BLOCK = registerBlock("an_ore_block",
+            () -> new AnOreBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops().sound(ModSounds.COBALT_LAMP_SOUNDS)
+                    .lightLevel((state) -> state.getValue(AnOreBlock.CLICKED) ? 7 : 0)),
+    ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> TURNIP_CROP = BLOCKS.register("turnip_crop",
             () -> new TurnipCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
@@ -183,6 +195,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WINTER_WINDOW = registerBlock("winter_window",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)), ModCreativeModeTab.COURSE_TAB);
+
 
 
     // both registerBlock and registerBlockItem are helper methods
@@ -334,4 +347,220 @@ public class ModBlocks {
  * Add the translation for these in the en_us.json file.
  *
  * Add the blocks in the resources -> assets -> mccourse -> blockstates folder
+ */
+
+/**
+ * 2:34
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * testing here
+ *
+ * 2:24
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * add the png files for textures block folder
+ *
+ * 2:09
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * add the json file for models item folder
+ *
+ * 1:50
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * add the json file for models block folder
+ *
+ * 1:37
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * add the translation in en_us.json
+ *
+ * 1:31
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * add the json file for blockstates folder
+ *
+ * 1:24
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * Next we need to call clientSetup for the custom flower
+ *
+ * 1:03
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * Note you might need no collusion or no collision
+ *
+ * 0:14
+ * 4. Intermediate Minecraft Modding Concepts
+ * 59. Custom Flower
+ * To create a custom flower
+ *
+ * we first need to create a registry object in ModBlocks folder.
+ */
+
+/**
+ * 3:02
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * more about the loot table here
+ *
+ * 2:46
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * testing here
+ *
+ * 2:28
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * Note you wont need the texture but add the cutout to MCCourseMod
+ *
+ * 1:54
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * add the translation in en_us.json
+ *
+ * 1:50
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * add the json file for models block folder
+ *
+ * 1:46
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * Add the json file for blockstates
+ *
+ * 1:08
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * Add the pot to the setup method in MCCourseMod,
+ *
+ * also code exlpained
+ *
+ * 0:38
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * Note Blocks.register is used here as well
+ *
+ * 0:05
+ * 4. Intermediate Minecraft Modding Concepts
+ * 60. Custom Flower Pots
+ * To create a custom flower pot,
+ *
+ * first create a registry object in ModBlocks
+ */
+
+/**
+ * 7:48
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * testing here
+ *
+ * 7:14
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * also add the json for the mccourse, tags, blocks, mineable folder
+ *
+ * 6:53
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * tags are needed in the minecraft folder , tags, blocks and then copy over the json files
+ *
+ * 6:38
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * add png files to textures block folder
+ *
+ * 6:28
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * add the json files to models item folder
+ *
+ * 6:07
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * add json file to models block folder
+ *
+ * 5:44
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * add translation to en_us.json
+ *
+ * 5:20
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * add the json files to mccourse blockstates folder,
+ *
+ * 1:54
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * create a registry object in the ModBlocks class
+ *
+ * 0:45
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * code explained
+ *
+ * 0:32
+ * 5. Advanced Minecraft Modding Concepts
+ * 77. Custom Wood
+ * to create our custom wood, we need a custom block class in mccourse's custom folder
+ */
+
+/**
+ * 7:33
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * testing here
+ *
+ * 4:17
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * add the a new class to the feature folder
+ *
+ * 3:46
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * add the png files to the textures block folder
+ *
+ * 3:29
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * add the json files to the block's item folder
+ *
+ * 2:58
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * add the translation in the en_us.json
+ *
+ * 2:46
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * add the json files to blockstates folder
+ *
+ * 2:30
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * add in the methods in MCCourseMod folder
+ *
+ * 1:49
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * Inside this folder you will create a folder (feature) inside this folder you will create a folder (tree) and then create a class inside that folder
+ *
+ * 1:28
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * create a new package (World) in the mccourse folder
+ *
+ * 0:35
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * these objects are created in the ModBlocks class
+ *
+ * 0:21
+ * 6. World Generation
+ * 79. Creating a Custom Tree
+ * To create a custom tree Note you will need logs, wood, sapling and leaves.
+ *
+ * This video adds in the sapling and leaves.
  */
